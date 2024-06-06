@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="connector.PaymentTest">
+      <class name="ecommerce.TC001_SignUpTest">
         <methods>
-          <include name="endreport"/>
-          <include name="startreport"/>
-          <include name="openbrowser"/>
-          <include name="payTest"/>
-          <include name="close"/>
+          <include name="launchBrowser"/>
+          <include name="SignUpTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- connector.PaymentTest -->
+      </class> <!-- ecommerce.TC001_SignUpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,11 +9,11 @@ import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ProjectSpecfiction extends Utilities {
 	ExtentReports report;
-	ExtentHtmlReporter htmlreport;
+	ExtentSparkReporter htmlreport;
 	ExtentTest test;
 	
 @BeforeTest
@@ -30,7 +30,7 @@ public class ProjectSpecfiction extends Utilities {
 @BeforeSuite
 public void startreport() {
 	 report  = new ExtentReports();
-    htmlreport = new ExtentHtmlReporter("./spicejet.html");
+    htmlreport = new ExtentSparkReporter("./spicejet.html");
     report.attachReporter(htmlreport);
 }
 @AfterSuite
